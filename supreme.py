@@ -14,7 +14,8 @@ browser.get("https://www.supremenewyork.com/shop")
 #shop = browser.find_elements_by_xpath('//*[@id="shop-scroller"]')
 
 elems = browser.find_elements_by_xpath("//a[@href]")
-for elem in elems:
+elems1 = elems[3:46]
+for elem in elems1:
     print(elem.get_attribute("href"))
 
 sleep(1)
